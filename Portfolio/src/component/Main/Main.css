@@ -1,0 +1,50 @@
+.main {
+   margin: 5rem 10% 0 10%;
+   height: 480px;
+   display: flex;
+   justify-content: space-between;
+}
+.fotografo {
+   width: 400px;
+   height: 480px;
+   z-index: 5;
+}
+.mujer {
+   position: relative;
+   height: 250px;
+   z-index: 10;
+   top: 28%;
+   left: 8%;
+}
+.arbol {
+   width: 500px;
+   z-index: 5;
+   height: 650px;
+}
+.about {
+   max-width: 43%;
+   margin-left: 10%;
+   margin-bottom: 10rem;
+}
+.contacto {
+   height: 18rem;
+   background: linear-gradient(90deg, rgba(50,70,36,0.3) 0%, rgba(83,122,54,0.3) 100%), url(../../imagenes/fotografo2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   letter-spacing: 1px;
+   margin-bottom: 5rem;
+}
+.contacto > button {
+   margin-left: 2rem;
+   padding: 0.7rem 2rem;
+   background-color: #fff;
+   font-weight: bold;
+}
+.contacto > button:hover {
+   background-color: #BF35BC;
+   cursor: pointer;
+}
