@@ -1,3 +1,4 @@
+/* Aqui comienza la section de info SOBRE MI */
 .main {
    margin: 5rem 10% 0 10%;
    height: 480px;
@@ -26,6 +27,9 @@
    margin-left: 10%;
    margin-bottom: 10rem;
 }
+/*} Aqui termina la section de info SOBRE MI */
+
+/*} Aqui comienza la section de CONTACTO */
 .contacto {
    height: 18rem;
    background: linear-gradient(90deg, rgba(50,70,36,0.3) 0%, rgba(83,122,54,0.3) 100%), url(../../imagenes/fotografo2.jpg);
@@ -48,7 +52,9 @@
    background-color: #BF35BC;
    cursor: pointer;
 }
+/*} Aqui termina la section de CONTACTO */
 
+/*} Aqui comienza la galeria de PORTFOLIO */
 .galeria {
    margin: 10rem 10%;
    display: grid;
@@ -89,3 +95,4 @@
 .grid-item:nth-child(7) {
    grid-row-start: span 3;
 }
+/*} Aqui termina la galeria de PORTFOLIO */

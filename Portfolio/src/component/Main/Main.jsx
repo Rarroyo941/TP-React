@@ -1,3 +1,4 @@
+import React from 'react'
 import './Main.css'
 import fotografo from '../../imagenes/fotografo.jpg'
 import mujer from '../../imagenes/mujer.jpg'
@@ -20,7 +21,7 @@ const Main =()=>{
       </section>
       <div className="about">
         <h2>Sobre mi</h2>
-        <p>En 2017 decidí estudiar la carrera de Licenciatura en Fotografia en la Universidad Nacional de San Martín, graduandome en 2020. Ahora resido en la ciudad de Rosario, dedicandome exclusivamente a la fotografía de la naturaleza.</p>
+        <p>En 2017 decidí estudiar la carrera de Licenciatura en Fotografia en la Universidad Nacional de San Martín, graduandome en 2020. Ahora resido en la ciudad de Rosario, dedicandome casi exclusivamente a la fotografía de la naturaleza.</p>
       </div>
       <section className="contacto">
         <h1>Capturá los mejores momentos de tu vida</h1>

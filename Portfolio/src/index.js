@@ -4,12 +4,15 @@ import './index.css';
 import Navbar from './component/Navbar/Navbar';
 import Main from './component/Main/Main';
 import Footer from './component/Footer/Footer';
+import Cacusel from './component/Carousel/Carousel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
     <Main />
+    <Cacusel />
+
     <Footer />
   </React.StrictMode>
 );
