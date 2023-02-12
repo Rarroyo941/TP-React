@@ -15,19 +15,19 @@ const Main =()=>{
     return (
       <>
       <section className='main'>
-        <img src={fotografo} alt="fotografo" className='fotografo'  />
+        <img src={fotografo} alt="fotografo" className='fotografo' id='sobremi' />
         <img src={mujer} alt="mujer" className='mujer'/>
         <img src={arbol} alt="arbol" className='arbol'/>
       </section>
       <div className="about">
-        <h2>Sobre mi</h2>
+        <h1>Sobre mi</h1>
         <p>En 2017 decidí estudiar la carrera de Licenciatura en Fotografia en la Universidad Nacional de San Martín, graduandome en 2020. Ahora resido en la ciudad de Rosario, dedicandome casi exclusivamente a la fotografía de la naturaleza.</p>
       </div>
-      <section className="contacto">
+      <section className="contacto" id='contacto'>
         <h1>Capturá los mejores momentos de tu vida</h1>
-        <button>CONTACTO</button>
+        <button id='contacto'>CONTACTO</button>
       </section>
-      <section className='galeria'>
+      <section className='galeria' id='portfolio'>
         <div className="grid-item"><img src={bandera} alt="bandera"/></div>
         <div className='grid-item'><p>Portfolio</p></div>
         <div className="grid-item"><img src={cataratas} alt="cataratas"/></div>

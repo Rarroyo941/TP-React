@@ -1,0 +1,19 @@
+.precios {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.plan {
+    margin-top: 1rem;
+}
+.costo {
+    margin-bottom: 1rem;
+}
+.plan, .costo {
+    text-align: center;
+}
+.items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.5rem;
+}

@@ -1,6 +1,17 @@
-carusel {
-    width: 100px;
-    height: 100px;
-    background-color: #000000;
-    margin: 10%;
+.comentarios {
+    margin: 1rem 10%;
+    font-weight: bold;
+}
+.d-flex {
+    margin: 0 10%;
+}
+.d-flex > img {
+    padding: 4rem;
+}
+.p-3 {
+    margin: 5rem;
+}
+.p-3 > h3 {
+    text-align: end;
+    color: #bf35bc;
 }

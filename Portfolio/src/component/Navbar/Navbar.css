@@ -1,6 +1,6 @@
 /*diseño del header */
 .header {
-    height: 35rem;
+    height: 90vh;
     margin: 1rem;
     border: 1rem solid black;
     border-radius: 30px;
@@ -27,15 +27,18 @@
 }
 .navbar {
     margin: 1rem;
+    display: flex;
 }
 
 .navbar > a {
     margin:0;
-    padding:1rem 2rem 0.5rem 2rem;
+    padding: 0 2rem 0.5rem 2rem;
     text-decoration: none;
     color: #fff;
     font-size: 1.4rem;
     position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
 }
 .navbar a:after {
     content: "";
@@ -65,8 +68,9 @@
     margin-right: 10%;
   }
   .linea1, .linea2 {
+    position: relative;
     border-left: 2px solid #fff;
-    height: 9rem;
+    height: 10rem;
     margin-left: 4rem;
   }
   .disenioizq > a > i {
@@ -182,5 +186,16 @@
 }
 .imagen > img {
   width: 500px;
+}
+
+.boton-ir-arriba {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 100;
+  background-color: #bf35bc;
+  border-radius: 30px;
+  color: #fff;
+  padding: 8px 4px;
 }
   

@@ -1,0 +1,37 @@
+.blog {
+    background-color: #f2f2f2;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+.blogTitulo {
+    padding:1rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+.cards-container {
+    display: flex;
+    margin: 0 10%;
+    justify-content: center;
+}
+.card {
+    margin: 0.5rem;
+    height: 23rem;
+}
+.card:hover {
+    box-shadow: 0 0 8px black;
+    cursor: pointer;
+}
+
+.icon-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 8px;
+}
+.cards-container > a {
+    text-decoration: none;
+    color: black;
+}
+.icon-container > span {
+    padding-left: 0.5rem;
+}
