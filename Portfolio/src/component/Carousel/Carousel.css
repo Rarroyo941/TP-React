@@ -9,9 +9,20 @@
     padding: 4rem;
 }
 .p-3 {
-    margin: 5rem;
+    margin: 3rem;
+    font-size: 1.3rem;
 }
 .p-3 > h3 {
     text-align: end;
     color: #bf35bc;
+}
+
+@media all and (min-width: 768px) and (max-width: 1120px) {
+    .p-3 {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    .d-flex > img {
+        padding: 2rem;
+    }
 }

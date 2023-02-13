@@ -16,6 +16,7 @@
 .card {
     margin: 0.5rem;
     height: 23rem;
+    width: 18rem;
 }
 .card:hover {
     box-shadow: 0 0 8px black;
@@ -34,4 +35,23 @@
 }
 .icon-container > span {
     padding-left: 0.5rem;
+}
+
+@media all and (min-width: 768px) and (max-width: 1120px) {
+    .blog {
+        padding: 1rem;
+    }
+    .cards-container {
+        overflow: hidden;
+        margin: 0 2%;
+        justify-content: center;
+    }
+    .cards-container > a {
+        margin: 0;
+    }
+    .card {
+        margin: 0.2rem;
+        height: 20rem;
+        width: 14rem;
+    }
 }

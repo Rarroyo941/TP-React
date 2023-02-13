@@ -3,6 +3,9 @@
     font-weight: bold;
     margin-top: 2rem;
 }
+.cards-container {
+    margin-bottom: 2rem;
+}
 .plan {
     margin-top: 1rem;
 }
@@ -15,5 +18,36 @@
 .items {
     display: flex;
     justify-content: space-between;
-    margin: 0 0.5rem;
+    margin: 0.5rem 0.5rem;
+}
+.item {
+    height: 1.4rem;
+}
+.icon {
+    font-size: 3rem;
+}
+.btnComprar {
+    position: absolute;
+    top: 77%;
+    left: 20%;
+    right: 20%;
+    background-color: #1f1f1f;
+    border: 1px solid black;
+}
+.btnComprar:hover {
+    background-color: #bf35bc;
+}
+
+@media all and (min-width: 768px) and (max-width: 1120px) {
+    .btnComprar {
+        position: absolute;
+        top: 73%;
+        left: 20%;
+        right: 20%;
+        background-color: #1f1f1f;
+        border: 1px solid black;
+    }
+    .icon {
+        font-size: 2rem;
+    }
 }

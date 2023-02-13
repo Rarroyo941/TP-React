@@ -81,3 +81,51 @@
     padding-top: 1rem;
 }
 
+@media all and (min-width: 768px) and (max-width: 1120px) {
+    .primerFooter {
+        padding-top: 1rem;
+        
+    }
+    .primerFooter > a  {
+        height: 1.5rem;
+        padding: 0.4rem 0.4rem 1.7rem 0.4rem;
+        margin-top: -1rem;
+    }
+    .primerFooter > p {
+        margin-left: 6rem;
+        
+    }
+    .segundoFooter {
+        justify-content: space-between;
+        height: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .segundoFooter > a {
+        font-size: 0.9rem;
+    }
+    .segundoFooterIconos > a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        
+    }
+    .segundoFooterIconos {
+        margin-left: -3rem;
+    }
+    .formMail > input {
+        width: 22vw;
+        height: 30px;
+        border: 2px solid #fff;
+        background-color: #1f1f1f;
+        color: #fff;
+        margin-right: 0;
+        
+    }
+    .btnFooter {
+        height: 30px;
+        width: 8vw;
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import {AiOutlineArrowDown} from 'react-icons/ai'
 
 const Navbar = () => {
   const [showButton, setShowButton] = useState(false);
@@ -24,9 +25,10 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
     <header className='header' id='inicio'>
       <div className='miclase'>
-        <h2 className='nombre'>Portfolio</h2>
+        <a href='#portfolio'>Portfolio</a>
         <div className='navbar'>
           <a href='#inicio'>Inicio</a>
           <a href='#sobremi'>Sobre mi</a>
@@ -58,6 +60,7 @@ const Navbar = () => {
         </div>
         <div className='textos'>
           <div className='texto'>
+            <a href='https://www.instagram.com/rodri.arroyo/' target={'_blank'} rel="noreferrer">
             <span className='texto1'>R</span>
             <span className='texto1'>o</span>
             <span className='texto1'>d</span>
@@ -72,6 +75,7 @@ const Navbar = () => {
             <span className='texto1'>o</span>
             <span className='texto1'>y</span>
             <span className='texto1'>o</span>
+            </a>
           </div>
           <h2 className='texto2'> Fotógrafo</h2>
         </div>
@@ -82,6 +86,10 @@ const Navbar = () => {
         </button>
       )}
     </header>
+    <a href='#sobremi' className="deslice">
+    <AiOutlineArrowDown /> Deslice hacia abajo <AiOutlineArrowDown />
+    </a>
+    </>
   );
 };
 

@@ -11,9 +11,9 @@
    z-index: 5;
 }
 .mujer {
-   position: relative;
-   top: 28%;
-   left: 8%;
+   position: absolute;
+   top: 135%;
+   left: 38%;
    height: 250px;
    z-index: 10;
 }
@@ -22,11 +22,10 @@
    z-index: 5;
    height: 650px;
 }
-.about {
-   max-width: 43%;
-   margin-left: 10%;
-   margin-bottom: 10rem;
-   margin-top: 1rem;
+
+.about { /* informacion SOBRE MI */
+   max-width: 35%;
+   margin: 1rem 0 10rem 10%;
 }
 .about > h1 {
    font-weight: bold;
@@ -103,3 +102,39 @@
    grid-row-start: span 3;
 }
 /*} Aqui termina la galeria de PORTFOLIO */
+
+@media all and (min-width: 768px) and (max-width: 1120px) {
+   .main {
+      margin: 2rem 5%;
+      overflow: hidden;
+   }
+   .about { /* informacion SOBRE MI */
+      max-width: 100%;
+      margin: 1rem 10% 10rem 10%;
+   }
+   .arbol {
+      width: 400px;
+      z-index: 5;
+      height: 481px;
+   }
+   .mujer {
+      position: absolute;
+      top: 135%;
+      left: 38%;
+      height: 25%;
+      z-index: 10;
+   }
+   .contacto > h1 {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+   }
+   .contacto > button {
+      margin-left: 2rem;
+      padding: 0.7rem 2rem;
+      background-color: #fff;
+      font-weight: bold;
+   }
+   .galeria {
+      margin: 10rem 5%;
+   }
+}
