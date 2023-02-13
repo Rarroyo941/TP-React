@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/TP-React/static/css/main.ea894e2e.css",
+    "main.js": "/TP-React/static/js/main.3a975490.js",
+    "static/media/fotografo2.jpg": "/TP-React/static/media/fotografo2.f054d7dffd9236d63e51.jpg",
+    "static/media/arbol.jpg": "/TP-React/static/media/arbol.58cfa076609c6c159464.jpg",
+    "static/media/bandera.jpg": "/TP-React/static/media/bandera.5a7fd357d915a0f3f4a1.jpg",
+    "static/media/header2.png": "/TP-React/static/media/header2.0acb0d8d5162a9124999.png",
+    "static/media/montania.jpg": "/TP-React/static/media/montania.29c1132b1a0a1adbd80f.jpg",
+    "static/media/ninio.jpg": "/TP-React/static/media/ninio.2b6c39974673b314a974.jpg",
+    "static/media/mujer2.jpg": "/TP-React/static/media/mujer2.cce0fab03399fbedbd72.jpg",
+    "static/media/glaciar.jpg": "/TP-React/static/media/glaciar.a3dad5b4bc4c2b2420f4.jpg",
+    "static/media/fotografo.jpg": "/TP-React/static/media/fotografo.a012b7d53ca9456744db.jpg",
+    "static/media/feedback2.jpg": "/TP-React/static/media/feedback2.c1162452da46633f799c.jpg",
+    "static/media/asado.jpg": "/TP-React/static/media/asado.7516a389998a63229491.jpg",
+    "static/media/obelisco.jpg": "/TP-React/static/media/obelisco.0ea0fdfd0fc1aa73c245.jpg",
+    "static/media/aurora.jpg": "/TP-React/static/media/aurora.75d32f9bdd8d561a42e6.jpg",
+    "static/media/panqueque.jpg": "/TP-React/static/media/panqueque.727a26765b8f93634c60.jpg",
+    "static/media/cataratas.jpg": "/TP-React/static/media/cataratas.420e7c8241a62649b576.jpg",
+    "static/media/mujer.jpg": "/TP-React/static/media/mujer.4f7a0d5d996100ac88fd.jpg",
+    "static/media/feedback3.jpg": "/TP-React/static/media/feedback3.1c314b4a6081b49ed2a9.jpg",
+    "static/media/photoshop.jpg": "/TP-React/static/media/photoshop.d5142fc5503bb3cf1eb7.jpg",
+    "static/media/feedback1.jpg": "/TP-React/static/media/feedback1.dc2bcad418f4942d75b9.jpg",
+    "index.html": "/TP-React/index.html",
+    "main.ea894e2e.css.map": "/TP-React/static/css/main.ea894e2e.css.map",
+    "main.3a975490.js.map": "/TP-React/static/js/main.3a975490.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea894e2e.css",
+    "static/js/main.3a975490.js"
+  ]
+}
