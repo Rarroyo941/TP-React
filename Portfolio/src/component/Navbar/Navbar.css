@@ -219,3 +219,9 @@
 .deslice > a:hover {
   color: #bf35bc;
 }
+@media all and (max-width: 767px) {
+  .header {
+    width: 90%;
+    margin: 5%;
+  }
+}
