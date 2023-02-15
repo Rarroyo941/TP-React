@@ -37,6 +37,11 @@ const Navbar = () => {
           <a href='#contacto'>Contacto</a>
           <a href='#blog'>Blog</a>
         </div>
+        <div className="navbar-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <div className='recuadro'>
         <div className='disenioizq'>

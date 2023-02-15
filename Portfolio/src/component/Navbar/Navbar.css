@@ -67,6 +67,9 @@
     transform-origin: left;
     transform: scaleX(1);
   }
+  .navbar-mobile {
+    display: none;
+  }
   .recuadro {
     display: flex;
   }
@@ -189,6 +192,7 @@
 .header > img {
   z-index: 1;
 }
+
 .imagen {
   width: 300px;
   height: 300px;
@@ -219,9 +223,28 @@
 .deslice > a:hover {
   color: #bf35bc;
 }
+
 @media all and (max-width: 767px) {
   .header {
     width: 90%;
     margin: 5%;
+  }
+  .navbar {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: -webkit-fill-available;
+    /*transform: translateX(-100%);*/
+    transition: 0.3s ease all;
+    z-index: 100;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .navbar > a {
+    font-size: 2rem;
   }
 }

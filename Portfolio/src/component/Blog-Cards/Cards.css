@@ -21,6 +21,7 @@
 .card:hover {
     box-shadow: 0 0 8px black;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .icon-container {
