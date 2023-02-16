@@ -18,7 +18,7 @@
     color: #fff;
     z-index: 20;
 }
-.miclase > a{
+.portfolio{
   font-weight: bold;
   padding: 1rem 0 1rem 4rem;
   margin: 0;
@@ -26,8 +26,9 @@
   letter-spacing: 1px;
   text-decoration: none;
   color: #fff;
+  z-index: 110;
 }
-.miclase > a:hover{
+.portfolio:hover{
   color: #bf35bc;
   text-shadow: 1px 1px 1px #fff;
 }
@@ -40,13 +41,18 @@
 
 .navbar > a {
     margin:0;
-    padding: 0 3% 0 1rem;
+    padding: 0 2% 0 1rem;
     text-decoration: none;
     color: #fff;
     font-size: 1.4rem;
     position: relative;
     flex-wrap: wrap;
     cursor: pointer;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: #bf35bc;
+    text-shadow: 1px 1px 1px #fff;
 }
 .navbar a:after {
     content: "";
@@ -56,7 +62,7 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background: #fff;
+    background: #bf35bc;
     /*animacion de derecha a izquierda*/
     transform-origin: right;
     transform: scaleX(0);
@@ -67,8 +73,18 @@
     transform-origin: left;
     transform: scaleX(1);
   }
-  .navbar-mobile {
-    display: none;
+  .nav-btn {
+    padding: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .nav-btn:hover {
+    color: #bf35bc;
   }
   .recuadro {
     display: flex;
@@ -110,7 +126,7 @@
     .texto {
       margin-top: 38%;
     }
-    .texto >a {
+    .texto > a {
       text-decoration: none;
     }
   .texto1 {
@@ -170,6 +186,9 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
+.textos > a {
+  text-decoration: none;
+}
   .texto2 {
     color: #fff;
     margin-top: 0;
@@ -223,28 +242,49 @@
 .deslice > a:hover {
   color: #bf35bc;
 }
-
-@media all and (max-width: 767px) {
+@media all and (min-width: 768px) and (max-width: 1120px) {
+  .navbar {
+    width: 63%;
+  }
+}
+@media all and (max-width: 768px) {
   .header {
     width: 90%;
-    margin: 5%;
+    margin: 3% 5%;
+  }
+  .miclase {
+    margin-left: -2rem;  
+  }
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    font-size: 1.8rem;
   }
   .navbar {
-    position: absolute;
-    top: 5px;
+    margin: 0;
+    position: fixed;
+    top: 0;
     left: 0;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
     width: 100%;
-    height: -webkit-fill-available;
-    /*transform: translateX(-100%);*/
-    transition: 0.3s ease all;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #333333;
+    transition: 1s;
+    transform: translateY(-100vh);
+    flex-direction: column;
     z-index: 100;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
-  .navbar > a {
-    font-size: 2rem;
+  .responsive_nav {
+    transform: none;
+  }
+  .nav-close-btn {
+    position: absolute;
+    top: 2.3rem;
+    right: 2.7rem;
+  }
+  .navbar a {
+    font-size: 1.5rem ;
   }
 }

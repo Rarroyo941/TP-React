@@ -1,8 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
-import {AiOutlineArrowDown} from 'react-icons/ai'
+import {AiOutlineArrowDown} from 'react-icons/ai';
+import {FaBars, FaTimes} from 'react-icons/fa'
+import {FcCompactCamera} from 'react-icons/fc';
 
 const Navbar = () => {
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle('responsive_nav');
+  }
+  const hideNavbar =()=>{
+    navRef.current.classList.remove("responsive_nav")
+  }
   const [showButton, setShowButton] = useState(false);
 
   function handleClick() {
@@ -28,20 +37,21 @@ const Navbar = () => {
     <>
     <header className='header' id='inicio'>
       <div className='miclase'>
-        <a href='#portfolio'>Portfolio</a>
-        <div className='navbar'>
-          <a href='#inicio'>Inicio</a>
-          <a href='#sobremi'>Sobre mi</a>
-          <a href='#portfolio'>Portfolio</a>
-          <a href='#precios'>Precios</a>
-          <a href='#contacto'>Contacto</a>
-          <a href='#blog'>Blog</a>
-        </div>
-        <div className="navbar-mobile">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <a href='#portfolio' className='portfolio' onClick={hideNavbar}>P<FcCompactCamera/>rtfolio</a>
+        <nav className='navbar' ref={navRef}>
+          <a href='#inicio' onClick={hideNavbar}>Inicio</a>
+          <a href='#sobremi' onClick={hideNavbar}>Sobre mi</a>
+          <a href='#portfolio' onClick={hideNavbar}>Portfolio</a>
+          <a href='#precios' onClick={hideNavbar}>Precios</a>
+          <a href='#contacto' onClick={hideNavbar}>Contacto</a>
+          <a href='#blog' onClick={hideNavbar}>Blog</a>
+          <button className='nav-btn nav-close-btn' onClick={showNavbar}>
+            <FaTimes/>
+          </button>
+        </nav>
+        <button className='nav-btn'onClick={showNavbar}>
+            <FaBars/>
+        </button>
       </div>
       <div className='recuadro'>
         <div className='disenioizq'>
@@ -66,23 +76,25 @@ const Navbar = () => {
         <div className='textos'>
           <div className='texto'>
             <a href='https://www.instagram.com/rodri.arroyo/' target={'_blank'} rel="noreferrer">
-            <span className='texto1'>R</span>
-            <span className='texto1'>o</span>
-            <span className='texto1'>d</span>
-            <span className='texto1'>r</span>
-            <span className='texto1'>i</span>
-            <span className='texto1'>g</span>
-            <span className='texto1'>o</span>
-            <span className='texto1'> M.</span>
-            <span className='texto1'> A</span>
-            <span className='texto1'>r</span>
-            <span className='texto1'>r</span>
-            <span className='texto1'>o</span>
-            <span className='texto1'>y</span>
-            <span className='texto1'>o</span>
+              <span className='texto1'>R</span>
+              <span className='texto1'>o</span>
+              <span className='texto1'>d</span>
+              <span className='texto1'>r</span>
+              <span className='texto1'>i</span>
+              <span className='texto1'>g</span>
+              <span className='texto1'>o</span>
+              <span className='texto1'> M.</span>
+              <span className='texto1'> A</span>
+              <span className='texto1'>r</span>
+              <span className='texto1'>r</span>
+              <span className='texto1'>o</span>
+              <span className='texto1'>y</span>
+              <span className='texto1'>o</span>
             </a>
           </div>
-          <h2 className='texto2'> Fotógrafo</h2>
+          <a href='https://www.instagram.com/rodri.arroyo/' target={'_blank'} rel="noreferrer">
+            <h2 className='texto2'> Fotógrafo</h2>
+          </a>
         </div>
       </div>
       {showButton && (
@@ -99,4 +111,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
