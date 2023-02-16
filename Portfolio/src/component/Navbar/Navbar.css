@@ -316,4 +316,22 @@
   .navbar a {
     font-size: 1.5rem ;
   }
+  .linea1, .linea2 {
+    border-left: 0;
+  }
+  .disenioizq {
+    position: absolute;
+    right: -8%;
+    top: 42%;
+  }
+  .disenioizq > a > i {
+    font-size: 1.5rem;
+  }
+  .textos {
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .deslice {
+    display: none;
+  }
 }

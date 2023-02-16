@@ -16,7 +16,7 @@ const Footer = () => {
                     <a href="https://ar.pinterest.com/search/pins/?q=nature&rs=typed" target={"_blank"} rel="noreferrer"><i class="fa-brands fa-pinterest"></i></a>
                 </div>
                 <form className='formMail' action="https://formsubmit.co/arroyo.rodrigo@outlook.com" target='_blank' method="POST" rel="noreferrer">
-                    <input type='email' placeholder='E-mail'></input><button className='btnFooter' id='btnFooter'>SEND</button>
+                    <input type='email' placeholder='E-mail'></input><button type="submit" className='btnFooter' id='btnFooter'>SEND</button>
                </form>            
             </div>
             <h5 className='copyright'>Copyright©2023-Todos los derechos reservados</h5>

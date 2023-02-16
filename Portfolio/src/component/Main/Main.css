@@ -40,21 +40,41 @@
    background-repeat: no-repeat;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-around;
    color: #fff;
-   text-shadow: 1px 1px 2px black;
-   letter-spacing: 1px;
+   
    margin-bottom: 5rem;
 }
-.contacto > button {
-   margin-left: 2rem;
-   padding: 0.7rem 2rem;
-   background-color: #fff;
-   font-weight: bold;
+.contacto > h1 {
+   width: 30%;
+   letter-spacing: 1px;
+   text-shadow: 1px 1px 2px black;
 }
-.contacto > button:hover {
-   background-color: #BF35BC;
-   cursor: pointer;
+.contact-form {
+   justify-content: flex-end;
+   display: flex;
+   flex-direction: column;
+}
+.contact-form > input, .contact-form > textarea {
+   color: black
+}
+.contact-form > textarea {
+   resize: none;
+}
+.contact-form > label {
+   color: #fff;
+}
+.respuesta-form {
+   max-width: 10%;
+   font-size: 1rem;
+   background-color: #bf35bc;
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid black;
+   text-align: center;
+}
+.respuesta-form-responsive {
+   visibility: hidden;
 }
 /*} Aqui termina la section de CONTACTO */
 
@@ -124,17 +144,56 @@
       height: 25%;
       z-index: 10;
    }
-   .contacto > h1 {
-      font-size: 1.5rem;
-      letter-spacing: 0;
-   }
-   .contacto > button {
-      margin-left: 2rem;
-      padding: 0.7rem 2rem;
-      background-color: #fff;
-      font-weight: bold;
-   }
+  .contacto > h1 {
+   margin-left: 7rem;
+  }
    .galeria {
       margin: 10rem 5%;
+   }
+}
+@media all and (max-width: 768px) {
+   .fotografo {
+      display: none;
+   }
+   .arbol {
+      width: 400px;
+      height: 500px;
+      margin: auto;
+   }
+   .mujer {
+      top: 135%;
+      left: 4%;
+      height: 150px;
+   }
+   .about {
+      max-width: 100%;
+      margin: 3rem 10% 4rem 10%;
+   }
+   .contacto > h1 {
+      font-size: 1.3rem;
+   }
+   .contact-form {
+      margin-right: -5%;
+   }
+   .respuesta-form {
+      width: 150px;
+   }
+   .respuesta-form {
+      opacity: 0;
+      visibility: hidden;
+   }
+   .respuesta-form-responsive {
+      visibility: visible;
+      margin: -3rem 5% -2rem 5%;
+      border-radius: 5px;
+      border: 2px solid black;
+      text-align: center;
+      background-color: #bf35bc;
+      color: #fff;
+   }
+   .galeria {
+      margin: 6rem 2%;
+      grid-gap: 5px;
+      grid-auto-rows: 100px;
    }
 }
