@@ -80,7 +80,7 @@
     border: none;
     outline: none;
     color: #fff;
-    visibility: hidden;
+    display: none;
     opacity: 0;
   }
   .nav-btn:hover {
@@ -243,8 +243,37 @@
   color: #bf35bc;
 }
 @media all and (min-width: 768px) and (max-width: 1120px) {
+  .nav-btn {
+    display: flex;
+    opacity: 1;
+    font-size: 1.8rem;
+  }
   .navbar {
-    width: 63%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #333333;
+    transition: 1s;
+    transform: translateY(-100vh);
+    flex-direction: column;
+    z-index: 100;
+  }
+  .responsive_nav {
+    transform: none;
+  }
+  .nav-close-btn {
+    position: absolute;
+    top: 2.3rem;
+    right: 2.7rem;
+  }
+  .navbar a {
+    font-size: 1.5rem ;
   }
 }
 @media all and (max-width: 768px) {
@@ -256,7 +285,7 @@
     margin-left: -2rem;  
   }
   .nav-btn {
-    visibility: visible;
+    display: flex;
     opacity: 1;
     font-size: 1.8rem;
   }
