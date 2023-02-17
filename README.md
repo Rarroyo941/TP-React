@@ -5,7 +5,7 @@
 
 <p>Para la funcionalidad del formulario se utilizó <a href="https://formspree.io">formspree.io</a></p>
 
-<p>El proyecto es totalmente Responsive, y comienza mostrando una breve descripción sobre mi:</p>
+<p>La web cuenta con diseño responsivo para celulares, tablets, notebooks y computadoras de escritorio, la mimsa comienza mostrando una breve descripción sobre mi:</p>
 
 ![sobremi](https://user-images.githubusercontent.com/117692104/219700713-a8fa5531-e323-4724-95d9-095dfd55e0f0.jpg)
 
