@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TP-React/static/css/main.cf61f37d.css",
-    "main.js": "/TP-React/static/js/main.32214ef5.js",
+    "main.css": "/TP-React/static/css/main.9c9df70f.css",
+    "main.js": "/TP-React/static/js/main.31e9dc15.js",
     "static/media/fotografo2.jpg": "/TP-React/static/media/fotografo2.f054d7dffd9236d63e51.jpg",
     "static/media/arbol.jpg": "/TP-React/static/media/arbol.58cfa076609c6c159464.jpg",
     "static/media/bandera.jpg": "/TP-React/static/media/bandera.5a7fd357d915a0f3f4a1.jpg",
@@ -22,11 +22,11 @@
     "static/media/photoshop.jpg": "/TP-React/static/media/photoshop.d5142fc5503bb3cf1eb7.jpg",
     "static/media/feedback1.jpg": "/TP-React/static/media/feedback1.dc2bcad418f4942d75b9.jpg",
     "index.html": "/TP-React/index.html",
-    "main.cf61f37d.css.map": "/TP-React/static/css/main.cf61f37d.css.map",
-    "main.32214ef5.js.map": "/TP-React/static/js/main.32214ef5.js.map"
+    "main.9c9df70f.css.map": "/TP-React/static/css/main.9c9df70f.css.map",
+    "main.31e9dc15.js.map": "/TP-React/static/js/main.31e9dc15.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf61f37d.css",
-    "static/js/main.32214ef5.js"
+    "static/css/main.9c9df70f.css",
+    "static/js/main.31e9dc15.js"
   ]
 }
