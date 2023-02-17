@@ -5,7 +5,7 @@
 
 <p>Para la funcionalidad del formulario se utilizó <a href="https://formspree.io">formspree.io</a></p>
 
-<img src="https://ibb.co/4jDW052" alt="sobremi"/>
+<img src="sobremi.jpg" alt="sobremi"/>
 
 <p>El proyecto es totalmente Responsive, y comienza mostrando una breve descripción sobre mi</p>
 
