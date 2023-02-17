@@ -56,3 +56,10 @@
         width: 14rem;
     }
 }
+@media screen and (max-width: 768px) {
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}

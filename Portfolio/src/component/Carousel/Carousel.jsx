@@ -10,20 +10,20 @@ const Carrusel =()=>{
         <>
         <h1 className='comentarios'>Comentarios</h1>
         <Carousel variant='dark'>
-      <Carousel.Item>
-        <div className="d-flex align-items-center">
-          <div className="p-3">
-            <p>Logra capturar la belleza y complejidad de la naturaleza de una forma espectacular, además de un uso magistral del color y la luz.</p>
-            <h3>- Roberto C.</h3>
-          </div>
-        <img
-          className="d-block w-50"
-          src={feedback1}
-          alt="First slide"
-        />
-        </div>
+          <Carousel.Item className='carousel-item'>
+            <div className="d-flex align-items-center">
+              <div className="p-3">
+                <p>Logra capturar la belleza y complejidad de la naturaleza de una forma espectacular, además de un uso magistral del color y la luz.</p>
+                <h3>- Roberto C.</h3>
+              </div>
+            <img
+              className="d-block w-50"
+              src={feedback1}
+              alt="First slide"
+              />
+            </div>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='carousel-item'>
       <div className="d-flex align-items-center">
         <div className="p-3">
             <p>Muy profesional, y un presupuesto acorde a lo que esperabamos, super recomendado.</p>
@@ -36,7 +36,7 @@ const Carrusel =()=>{
         />
         </div>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className='carousel-item'>
       <div className="d-flex align-items-center">
         <div className="p-3">
             <p>Tiene un talento increible, entregó las fotos en tiempo y forma, me encantó el trabajo que hizo!</p>

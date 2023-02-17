@@ -269,14 +269,14 @@
   }
   .nav-close-btn {
     position: absolute;
-    top: 2.3rem;
+    top: 2.5rem;
     right: 2.7rem;
   }
   .navbar a {
     font-size: 1.5rem ;
   }
 }
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     width: 90%;
     margin: 3% 5%;

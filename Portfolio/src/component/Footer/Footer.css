@@ -57,7 +57,6 @@
     border: 2px solid #fff;
     background-color: #1f1f1f;
     color: #fff;
-    
 }
 .formMail > input::placeholder {
     color: #fff;
@@ -65,7 +64,7 @@
 }
 .btnFooter {
     height: 30px;
-    width: 5vw;
+    width: 7vw;
     border: 2px solid #fff;
     background-color: #fff;
     font-weight: bold;
@@ -79,6 +78,10 @@
     color: #545454;
     text-align: center;
     padding-top: 1rem;
+}
+.footer-responsive {
+    display: none;
+    background-color: #1f1f1f;
 }
 
 @media all and (min-width: 768px) and (max-width: 1120px) {
@@ -127,5 +130,51 @@
         margin-left: 0;
         margin-right: 1rem;
     }
-
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+    .footer-responsive {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-responsive > a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem;
+    }
+    .footer-responsive > a:hover {
+        background-color: #BF35BC;
+        border-radius: 30px;
+    }
+    .footer-responsive > p {
+        color: #fff;
+        margin: 1rem 0 0 0;
+    }
+    .footer-responsive-icons > a {
+        padding: 0 1rem;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .formMail {
+        padding-top: 0.5rem;
+    }
+    .formMail > label {
+        display: none;
+    }
+    .formMail > input {
+        width: 40vw;
+    }
+    .btnFooter {
+        width: 20vw;
+    }
+    .copyright-responsive {
+        color: #545454;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
 }

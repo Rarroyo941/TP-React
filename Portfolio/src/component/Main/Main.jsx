@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Main.css';
 import fotografo from '../../imagenes/fotografo.jpg';
 import mujer from '../../imagenes/mujer.jpg';
@@ -11,22 +11,14 @@ import montania from '../../imagenes/montania.jpg';
 import ninio from '../../imagenes/ninio.jpg';
 import obelisco from '../../imagenes/obelisco.jpg';
 import mujer2 from '../../imagenes/mujer2.jpg'
+import Carousel from 'react-bootstrap/Carousel';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Main = () => {
-  const [nombre, setNombre] = useState('');
-  const [email, setEmail] = useState('');
-  const [telefono, setTelefono] = useState('');
-  const [mensaje, setMensaje] = useState('');
-  const [showPopup, setShowPopup] = useState(false);
-  const valid = nombre !== '' && email !== '' && telefono !== '';
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setShowPopup(true);
-  };
-
- 
-
+  const [state, handleSubmit] = useForm("mpzedabb");
+  if (state.succeeded) {
+      alert('¡Hemos recibido tu mensaje!');
+  }
   return (
     <>
       <section className='main'>
@@ -46,26 +38,35 @@ const Main = () => {
         <div></div>
         <h1>Capturá los mejores momentos de tu vida</h1>
         
-        <form onSubmit={handleSubmit} className='contact-form' action="https://formsubmit.co/arroyo.rodrigo@outlook.com" target='_blank' method="POST" rel="noreferrer">
+        <form onSubmit={handleSubmit} className='contact-form'>
           <label for='nombre'>Nombre:</label>
-          <input type='text' value={nombre} onChange={(event) => setNombre(event.target.value)} name='nombre' />
-          <label for='email'>Email: </label>
-          <input type='email' value={email} onChange={(event) => setEmail(event.target.value)} name='email' />
+          <input type='text'  name='nombre'  id="nombre" />
+          <ValidationError 
+        prefix="Nombre" 
+        field="nombre"
+        errors={state.errors}
+      />
+          <label htmlFor="email">Email: </label>
+          <input type='email' name='email'  id="email"/>
+          <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
           <label for='telefono'>Teléfono:</label>
-          <input type='number' value={telefono} onChange={(event) => setTelefono(event.target.value)} name='telefono' />
+          <input type='number' name='telefono'  id="telefono" />
+          <ValidationError 
+        prefix="Number" 
+        field="number"
+        errors={state.errors}
+      />
           <label for='mensaje'>Mensaje:</label>
-          <textarea value={mensaje} onChange={(event) => setMensaje(event.target.value)} name='mensaje' />
-          <button type='submit' className='form-btn' disabled={!valid}>
+          <textarea name='mensaje'  id="message" />
+          <button type='submit' className='form-btn' disabled={state.submitting}>
             Enviar
           </button>
-        </form>
-        <h2 style={{ display: showPopup ? 'block' : 'none' }} className="respuesta-form">
-  Sus datos fueron enviados con éxito!
-</h2>       
-      </section> 
-      <h2 style={{ display: showPopup ? 'block' : 'none' }} className="respuesta-form-responsive">
-  Sus datos fueron enviados con éxito!
-</h2>      
+        </form> 
+      </section>     
       <section className='galeria' id='portfolio'>
         <div className="grid-item"><img src={bandera} alt="bandera"/></div>
         <div className='grid-item'><p>Portfolio</p></div>
@@ -77,6 +78,67 @@ const Main = () => {
         <div className="grid-item"><img src={obelisco} alt="obelisco"/></div>
         <div className="grid-item"><img src={asado} alt="asado"/></div>
       </section>
+      <section className='galeria-responsive'>
+        <h1 id='portfolio' className='galeria-responsive-title'>Portfolio</h1>
+        <Carousel variant='dark'>
+        <Carousel.Item className='carousel-item-responsive'>
+          <img
+            className="d-block w-100"
+            src={bandera}
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item className='carousel-item-responsive'>
+          <img
+            className="d-block w-100"
+            src={cataratas}
+            alt="Second slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item className='carousel-item-responsive'>
+          <img
+            className="d-block w-100"
+            src={glaciar}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item className='carousel-item-responsive'>
+          <img
+            className="d-block w-100"
+            src={mujer2}
+            alt="Fourth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item className='carousel-item-responsive'>
+          <img
+            className="d-block w-100"
+            src={ninio}
+            alt="Fifth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item className='carousel-item-responsive'>
+          <img
+            className="d-block w-100"
+            src={montania}
+            alt="Sixth slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item className='carousel-item-responsive'>
+            <img
+              className="d-block w-100"
+              src={obelisco}
+              alt="Seventh slide"
+            />
+          </Carousel.Item>
+        <Carousel.Item className='carousel-item-responsive'>
+            <img
+              className="d-block w-100"
+              src={asado}
+              alt="Eight slide"
+            />
+          </Carousel.Item>
+        </Carousel>
+    </section>
       </>
     )
 }
