@@ -5,11 +5,9 @@
 
 <p>Para la funcionalidad del formulario se utilizó <a href="https://formspree.io">formspree.io</a></p>
 
-![sobremi](https://user-images.githubusercontent.com/117692104/219700713-a8fa5531-e323-4724-95d9-095dfd55e0f0.jpg)
-
 <p>El proyecto es totalmente Responsive, y comienza mostrando una breve descripción sobre mi</p>
 
-<img src=sobremi/>
+![sobremi](https://user-images.githubusercontent.com/117692104/219700713-a8fa5531-e323-4724-95d9-095dfd55e0f0.jpg)
 
 <p>Como así también muestras de mi trabajo fotográfico</p>
 
