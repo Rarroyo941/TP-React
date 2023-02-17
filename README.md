@@ -5,14 +5,14 @@
 
 <p>Para la funcionalidad del formulario se utilizó <a href="https://formspree.io">formspree.io</a></p>
 
-<p>El proyecto es totalmente Responsive, y comienza mostrando una breve descripción sobre mi</p>
+<p>El proyecto es totalmente Responsive, y comienza mostrando una breve descripción sobre mi:</p>
 
 ![sobremi](https://user-images.githubusercontent.com/117692104/219700713-a8fa5531-e323-4724-95d9-095dfd55e0f0.jpg)
 
-<p>Como así también muestras de mi trabajo fotográfico</p>
+<p>Como así también muestras de mi trabajo fotográfico:</p>
 
 ![portfolio](https://user-images.githubusercontent.com/117692104/219700752-7ecb6b96-d66e-44a2-8d7c-15ca562241b4.png)
 
-<p>Y muchos otros componentes como un blog con tips para perfeccionar las técnicas fotográficas, por último una cartilla con los precios en caso de contratacion</p>
+<p>Y muchos otros componentes como un blog con tips para perfeccionar las técnicas fotográficas, por último una cartilla con los precios en caso de contratación.</p>
 
 ![blogyprecios](https://user-images.githubusercontent.com/117692104/219700742-fb46e3db-803f-4351-af26-7424ce9970c5.png)
