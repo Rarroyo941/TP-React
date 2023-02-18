@@ -138,7 +138,7 @@
     animation-fill-mode: forwards;
     opacity: 0;
   }
-
+/* animacion del nombre al actualizar la pagina */
 .texto1:nth-of-type(1) {
     animation-delay: 0.1s;
 }
@@ -221,6 +221,7 @@
 .imagen > img {
   width: 500px;
 }
+/* diseño boton "ir arriba" */
 
 .boton-ir-arriba {
   position: fixed;
